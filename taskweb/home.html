@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="forhome.css">
+
+<body class="w3-light-grey w3-content">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-dark-grey w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    
+    <h4><b>Mental Health Blog</b></h4>
+
+  </div>
+  <div class="w3-bar-block">
+    <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>My Blog</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.facebook.com"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+&nbsp;
+
+    <a href="https://www.twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>&nbsp;
+    <a href="https://in.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Header -->
+  <header id="blog">
+    
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Blog</b></h1>
+
+    </div>
+  </header>
+
+  <!-- First Photo Grid-->
+  <div class="w3-col-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+     
+      <div class="w3-container w3-white">
+        <p><b>Anxiety</b></p>
+        <p>Anxiety is your body’s natural response to stress. It’s a feeling of fear or apprehension about what’s to come. The first day of school, going to a job interview, or giving a speech may cause most people to feel fearful and nervous.</p>
+      </div>
+    </div>
+    </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-col-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+     
+      <div class="w3-container w3-white">
+        <p><b>Overthinking</b></p>
+        <p>overthinking is caused by a single emotion: fear. When you focus on all the negative things that might happen, it's easy to become paralyzed. Next time you sense that you starting to spiral in that direction, stop.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      
+     
+    </div>
+    
+  </div>
+
+
+
+  
+
+  
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-white">
+    <h4 id="contact"><b>Add Comments</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>stutiswarnkar123@gmail.com</p>
+      </div>
+      <div class="w3-third w3-amber">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Ghaziabad, India</p>
+      </div>
+      <div class="w3-third w3-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>9876543210</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank" method="POST"> 
+      
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" id="uemail" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Comment</label>
+        <input class="w3-input w3-border" id="ucomment" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-dark-grey w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-amber">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>A recent survey showed 41 percent of employees from a range of industries reported high levels of anxiety in the workplace.
+
+      </p>
+      <p>Powered by <a href="https://medium.com/@blumfest/global-depression-and-anxiety-148afd856432" target="_blank">MEDIUM</a></p>
+    </div>
+
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+
+          <span class="w3-large">Schizophrenia</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">Bipolar Disorder</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Brain</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Global</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">World</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Anxiety</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">People</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Illness</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Depression</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Data</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Bipolar</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Passive</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Peace</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Disorder</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">OCD</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+
+  <div class="w3-grey w3-center w3-padding-24">Powered by <a href="https://www.anxietycentre.com/anxiety-statistics-information.shtml" title="W3.CSS" target="_blank" class="w3-hover-opacity">anxietycentre</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
