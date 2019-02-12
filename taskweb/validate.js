@@ -1,4 +1,4 @@
-var pass = document.getElementById("pass")
+var pass = document.getElementById("upassword")
   , confirm_password = document.getElementById("pass-rep");
 
 function validatePassword(){
